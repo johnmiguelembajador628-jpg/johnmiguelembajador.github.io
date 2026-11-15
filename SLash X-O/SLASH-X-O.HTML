@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slash X and O</title>
+<link rel="stylesheet" href="SLASH-X-O.css">
+</head>
+<body>
+<main>
+<h1><span class="x">SLASH</span> X <span class="O">O</span></h1>
+<section id="menu">
+<p>Pick a mode, then press Start.</p>
+<div class="seg" id="modes">
+<button class="on" data-mode="cpu">Vs computer</button>
+<button data-mode="two">Two players</button>
+</div>
+<div class="seg" id="levels">
+<button data-lvl="easy">Easy</button>
+<button class="on" data-lvl="hard">Unbeatable</button>
+</div>
+<div class="btns"><button class="go" id="start">Start game</button></div>
+</section>
+<section id="game">
+<div id="status" aria-live="polite"></div>
+<div id="board" role="grid"></div>
+<div class="score">
+<div><b id="sx">0</b><span id="nx">X</span></div>
+<div><b id="sd">0</b>Draws</div>
+<div><b id="so">0</b><span id="no">O</span></div>
+</div>
+<div class="row"><button id="again">Play again</button><button id="menuBtn">Change mode</button></div>
+<div class="row" style="margin-top:8px"><button id="mute">Music: on</button></div>
+</section>
+</main>
+
+<script src="SLASH-X-O.js"></script>
+</body>
+</html>
